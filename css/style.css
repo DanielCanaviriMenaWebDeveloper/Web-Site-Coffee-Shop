@@ -20,7 +20,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 1rem = 10px */
     overflow-x: hidden;
     scroll-padding-top: 2rem;
     scroll-behavior: smooth; /* Comportamiento de Desplazamiento: liso */
@@ -43,9 +43,21 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: var(--bg);
-    color: white;
 }
 
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
 header {
     background: var(--bg);
     display: flex;
@@ -59,6 +71,123 @@ header {
     right: 0;
     z-index: 1000;
 }
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color); /* Coloca una linea debajo de cada enlace */
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+
+    transform: scaleY(0); /* El elemento se reduce a 0 en el eje y */
+    transform-origin: top; /* Aparece desde la parte superior */
+}
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover {
+    color: var(--main-color)
+}
+
+.header .cart-item-container {
+    position: absolute;
+    top: 100%; /* Top de 100% del alto del contenedor padre. */
+    right: -100%; /* Oculta el elemento desplazandolo*/
+    height: calc(100vh - 9.4rem); /* El alto sera todo el alto del View Height menos el alto del Header */
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+.header .cart-item-container .card-item {
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header .cart-item-container .card-item .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cart-item-container .card-item .fa-times:hover {
+    color: var(--main-color);
+}
+
+.header .cart-item-container .card-item img {
+    height: 7rem;
+}
+
+.header .cart-item-container .card-item .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cart-item-container .card-item .content .price {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.header .cart-item-container .btn {
+    width: 100%;
+    text-align: center;
+}
+
 
 
 
