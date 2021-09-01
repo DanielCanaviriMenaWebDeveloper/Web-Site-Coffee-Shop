@@ -491,7 +491,6 @@ header {
 /* =========== CONTACT =========== */
 .contact .row {
     display: flex;
-    align-items: center;
     background: var(--black);
     gap: 1rem;
     flex-wrap: wrap;
@@ -506,7 +505,7 @@ header {
 .contact .row form {
     flex: 1 1 45rem;
     padding: 5rem 2rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .contact .row form h3 {
@@ -514,6 +513,39 @@ header {
     font-size: 3.5rem;
     color: #fff;
 }
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--black);
+    border: var(--border); 
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: none;
+    text-transform: none;
+
+}
+
+
+
+
+
+
+
+
 
 
 
