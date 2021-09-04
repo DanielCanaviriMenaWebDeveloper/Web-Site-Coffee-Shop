@@ -22,8 +22,8 @@
 html {
     font-size: 62.5%; /* 1rem = 10px */
     overflow-x: hidden;
-    /* scroll-padding-top: 2rem; */
-    /* scroll-behavior: smooth; */ /* Comportamiento de Desplazamiento: liso */
+    scroll-padding-top: 10rem;
+    scroll-behavior: smooth; /* Comportamiento de Desplazamiento: liso */
 }
 
 html::-webkit-scrollbar {
@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background: var(--bg);
-    margin-bottom: 60rem;
+    /* margin-bottom: 60rem; */
 }
 
 section {
